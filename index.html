@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Receita/Despesa</title>
+    <link rel="stylesheet" href="./Assets/CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="menu-button">&#9776;</button>
+            <h1>Nova [Receita/Despesa]</h1>
+        </header>
+
+        <form class="form">
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Defina a movimentação">
+            </div>
+
+            <div class="form-group">
+                <label for="valor">Valor</label>
+                <input type="number" id="valor" name="valor" placeholder="Valor">
+            </div>
+
+            <div class="form-group">
+                <label for="data-insercao">Data inserção</label>
+                <input type="date" id="data-insercao" name="data-insercao">
+            </div>
+
+            <div class="form-group">
+                <label for="data-ocorrido">Data ocorrido</label>
+                <input type="date" id="data-ocorrido" name="data-ocorrido">
+            </div>
+
+            <div class="form-group">
+                <label for="classe-item">Classe do item</label>
+                <select id="classe-item" name="classe-item">
+                    <option value="">Selecione</option>
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Despesa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="recorrencia-item">Recorrência do item</label>
+                <select id="recorrencia-item" name="recorrencia-item">
+                    <option value="">Selecione</option>
+                    <option value="diario">Diário</option>
+                    <option value="mensal">Mensal</option>
+                    <option value="anual">Anual</option>
+                    <option value="personalizado">Personalizado</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="observacao">Observação</label>
+                <textarea id="observacao" name="observacao" placeholder="Observação"></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Adicionar item</button>
+        </form>
+    </div>
+</body>
+</html>
